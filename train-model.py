@@ -43,7 +43,7 @@ mpg.replace("?", pd.NA, inplace=True)
 mpg["horsepower"] = pd.to_numeric(mpg["horsepower"], errors="coerce")
 
 X_mpg = mpg[["cylinders", "displacement", "horsepower",
-             "weight", "acceleration", "model-year", ]]
+             "weight", "acceleration", "model-year" ]]
 y_mpg = mpg["mpg"]
 
 imputer = SimpleImputer(strategy="mean")
